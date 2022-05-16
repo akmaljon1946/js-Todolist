@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Mukta", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background-color: rgb(38, 170, 203);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-todo-wrapper {
+    width: 300px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 165, 59);
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    /* border: 2px solid #000000; */
+    background-color: rgb(245, 165, 59);
+}
+
+#description-task {
+    width: 200px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-wrapper {
+    padding-bottom: 11px;
+}
+
+#add-task-btn {
+    width: 60px;
+    height: 32px;
+    padding: 3px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(27, 223, 102, 0.5);
+}
+
+#add-task-btn:hover {
+    background-color: rgb(58, 217, 119);
+    transition: all 400ms ease;
+}
+
+/*task*/
+
+.todos-wrapper {
+  margin-bottom: 100px;
+   
+}
+
+.todo-item {
+  width: 300px;
+  height: 25px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: rgb(233, 182, 54);
+  padding: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item.checked {
+    background-color: darkgray;
+    opacity: 0.5;
+}
+
+.todo-item.delition{
+    animation: opacity 1s ease-in-out;
+}
+
+.description {
+    font-weight: 600;
+    font-size: 15px;
+    color: aliceblue;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.btn-complete {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.btn-delete {
+    font-size: 10px;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(207, 22, 22);
+    color: aliceblue;
+}
+
+.btn-delete:hover {
+    background-color: rgb(212, 94, 94);
+    transition: all 400ms ease;
+}
+
+
+@keyframes opacity {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
